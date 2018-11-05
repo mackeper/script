@@ -5,7 +5,7 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
 	then
 		file_count=$((file_count+1))
 	else
-		echo $line >> "res_file$file_count"
+		echo $line >> "res_file$file_count.asc"
 	fi
 done < "$1"
 file_count=$((file_count+1))
