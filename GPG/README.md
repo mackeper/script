@@ -19,7 +19,7 @@ gpg> adduid
 gpg> save
 ```
 
-### Creating key
+### Deleting key
 ```
 $ gpg --delete-key <name>
 ```
@@ -33,14 +33,12 @@ $ gpg --import <file>
 ```
 $ gpg --armor --output <file> --export <name>
 ```
-s	
-	a## Signing a key
-	oireiofrijfv ### local sign
-`###``
-iqweV
+### Signing a key
+#### local sign
+``
 $ gpg --lsign <name>
 ```
-das### Sign
+#### Sign
 ```
 $ gpg --edit-key <name>
 
@@ -57,28 +55,28 @@ $ gpg --check-sig <name>
 ### Encrypting/Decrypting messages
 #### Sign a message
 ```
-gpg --local-user <name> --clearsign <file>
+$ gpg --local-user <name> --clearsign <file>
 ```
 
 #### Encrypt a message
 ```
-gpg --armor --recipient <receiver's name> --recipient <your name>
-     --encrypt <file>
+$ gpg --armor --recipient <receiver's name> --recipient <your name>
+       --encrypt <file>
 ```
 
 #### Sign and encrypt a message
 ```
-gpg --local-user <your name> --recipient <receiver's name>
-     --recipient <your name> --armor --sign --encrypt <file>
+$ gpg --local-user <your name> --recipient <receiver's name>
+       --recipient <your name> --armor --sign --encrypt <file>
 ```
 
 #### Verify sign
 ```
-gpg --verify <file>
+$ gpg --verify <file>
 ```
 
 #### Decrypt (and verify)
 ```
-gpg --decrypt-files <file>
+$ gpg --decrypt-files <file>
 ```
 
