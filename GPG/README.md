@@ -35,7 +35,7 @@ $ gpg --armor --output <file> --export <name>
 ```
 ### Signing a key
 #### local sign
-``
+```
 $ gpg --lsign <name>
 ```
 #### Sign
