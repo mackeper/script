@@ -18,6 +18,12 @@ $ gpg --edit-key <name>
 gpg> adduid
 gpg> save
 ```
+
+### Creating key
+```
+$ gpg --delete-key <name>
+```
+
 ### Importing key
 ```
 $ gpg --import <file>
