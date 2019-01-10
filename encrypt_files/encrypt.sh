@@ -2,6 +2,14 @@
 
 # Encrypt or decrypt a file
 #
+# Encrypt multiple files:
+# Put them in a directory
+# run : tar -czf /<directory>/
+# then run this script on that file
+# 
+# Decrypt multiple file:
+# run this script on a .tar.gz.enc file
+# then run: tar -xzf <directory>.tar.gz file
 #
 # Author: Marcus Östling
 
